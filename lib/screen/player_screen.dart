@@ -13,7 +13,11 @@ class PlayerScreen extends StatelessWidget {
         children: [
           Flexible(
               child: Container(
-                color: Colors.red,
+                child: Column(
+                  children: [
+
+                  ],
+                ),
               )
           ),
           Flexible(

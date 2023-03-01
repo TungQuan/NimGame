@@ -64,6 +64,8 @@ flutter:
   assets:
      - assets/stick1.png
      - assets/stick2.png
+     - assets/siunhanhuong.jpeg
+     - assets/siunhanvang.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
