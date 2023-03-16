@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:nimgamectu/screen/pile_screen.dart';
 import 'package:nimgamectu/screen/player_screen.dart';
 
 import '../widget/circular_fab_widget.dart';
@@ -14,14 +15,21 @@ class GameScreen extends StatefulWidget {
 class _GameScreenState extends State<GameScreen> {
   @override
   Widget build(BuildContext context) {
+    var height = AppBar().preferredSize.height;
     return Scaffold(
         appBar: AppBar(
           title: const Text('Nim Game'),
         ),
-        body: Column(
-          children: const [
-            PlayerScreen()
-          ],
+        body: Container(
+          margin: EdgeInsets.only(top: height),
+          child: SingleChildScrollView(
+            child: Column(
+              children: const [
+                PlayerScreen(),
+                PileScreen()
+              ],
+            ),
+          ),
         ),
       floatingActionButton: const CircularFabWidget(),
     );
